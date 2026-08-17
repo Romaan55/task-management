@@ -1,9 +1,8 @@
 def check_bracket(text):
-    list = []
+    list = [] 
     for bracket in text:
-
         if bracket == '(' or bracket == '[' or bracket == '{':
-            list.append(bracket)
+            list.append(bracket) #add the bracket in list
         else:
             if len(list) == 0:
                 return False
@@ -14,7 +13,6 @@ def check_bracket(text):
                 return False
             if bracket == '}' and last != '{':
                 return False
-
     if len(list) == 0:
         return True
     else:

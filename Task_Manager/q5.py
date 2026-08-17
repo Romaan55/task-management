@@ -1,3 +1,4 @@
+#no character should be repeated 
 letters = 26 * 25
 digits = 10 * 9 * 8
 total = letters * digits

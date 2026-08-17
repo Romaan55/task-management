@@ -11,16 +11,16 @@ print("Race 3:", group3)
 print("Race 4:", group4)
 print("Race 5:", group5)
 
-winner1 = "A1"
-winner2 = "B1"
-winner3 = "C1"
-winner4 = "D1"
-winner5 = "E1"
+winner1 = "A1" #winner of Race 1
+winner2 = "B1" #winner of Race 2
+winner3 = "C1" #winner of Race 3
+winner4 = "D1" #winner of Race 4
+winner5 = "E1" #winner of Race 5
 
-print("Race 6:", winner1, winner2, winner3, winner4, winner5)# 6th race: 5 winners
+print("Race 6:", winner1, winner2, winner3, winner4, winner5)#6th race: 5 winners
 print("Race 6 result: A1, B1, C1, D1, E1")# result ye aaya
 
-# Ab topp 3 ke horses
+# Ab top 3 ke horses
 possible = ["A1", "A2", "A3", "B1", "B2", "C1"]
 print("Race 7:", "A2", "A3", "B1", "B2", "C1")
 print("Top 3 fastest horses: A1, A2, B1")
