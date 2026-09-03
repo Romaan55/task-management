@@ -44,4 +44,3 @@ except requests.exceptions.ConnectionError:
     print("No Internet Connection.")
 except Exception as e:
     print("Something went wrong:", e)
-
