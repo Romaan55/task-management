@@ -1,8 +1,8 @@
 documents = [
-    {"doc_id": "doc_1", "text": "AI is used in worldwide"},
-    {"doc_id": "doc_2", "text": "Python is also used in AI"},
-    {"doc_id": "doc_3", "text": "Linux is used in System Administration"},
-    {"doc_id": "doc_4", "text": "Python is Programming Language"}
+    {"doc_id": "doc_1", "text": "ai is used in worldwide"},
+    {"doc_id": "doc_2", "text": "python is also used in AI"},
+    {"doc_id": "doc_3", "text": "linux is used in System Administration"},
+    {"doc_id": "doc_4", "text": "python is Programming Language"}
 ]
 
 inverted_index = {}
@@ -46,10 +46,9 @@ for doc_id in results:
     for word in query_words:
         frequency = words.count(word)
         tf = frequency / total_words
-    
-        print
-        (
-            "Word:", word,
-            "Document:", doc_id,
-            "TF:", tf
-        )
+           
+        print("Word:", word)
+        print("Document:", doc_id)
+        print("TF:", tf)
+        print("Frequency",frequency)
+        
