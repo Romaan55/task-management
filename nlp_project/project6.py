@@ -4,15 +4,14 @@ documents = [
     {"doc_id": "doc_3", "text": "linux is used in System Administration"},
     {"doc_id": "doc_4", "text": "python is Programming Language"}
 ]
-
-inverted_index = {}
 # Inverted Index
 inverted_index = {}
 
 for document in documents:
     doc_id = document["doc_id"]
     text = document["text"]
-    words = text.lower().split()
+    words = text.lower()
+    words = text.split()
     for word in words:
         if word not in inverted_index:
             inverted_index[word] = []
@@ -34,7 +33,6 @@ for word in query_words:
             if doc_id not in results:
                 results.append(doc_id)
     else:
-        print("Word:", word)
         print("Word is not available in documents")
 
 print("Matching Documents:", results)
@@ -61,8 +59,8 @@ for word in query_words:
 
         print("Word:", word)
         print("Document:", doc_id)
+        print("Frequency",frequency)
         print("Document Frequency:", document_frequency)
         print("TF:", tf)
         print("IDF:", idf)
-        print("Frequency",frequency)
         
